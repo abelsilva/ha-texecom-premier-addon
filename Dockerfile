@@ -17,5 +17,8 @@ FROM ${BUILD_FROM}
 WORKDIR /app
 
 COPY --from=build-container /app/out .
+COPY ./run.sh /app/run.sh
 
-CMD [ "/app/HaTexecomPremierAddon" ]
+RUN chmod a+x /app/run.sh
+
+CMD [ "/app/run.sh" ]
