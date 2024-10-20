@@ -4,8 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <PublishSingleFile>true</PublishSingleFile>
-    <SelfContained>true</SelfContained>
+    <PublishSingleFile>false</PublishSingleFile>
+    <SelfContained>false</SelfContained>
     <PublishAot>false</PublishAot>
     <UserSecretsId>dotnet-HaTexecomPremierAddon-35a39272-39f3-4bc6-86dc-7c006d3ab013</UserSecretsId>
   </PropertyGroup>

@@ -1,3 +1,4 @@
 #!/usr/bin/with-contenv bashio
 
-/app/HaTexecomPremierAddon
+cd app
+dotnet HaTexecomPremierAddon.dll
