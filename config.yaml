@@ -1,6 +1,6 @@
 name: "Texecom Premier"
 description: "Texecom Premier Home Assistant Add-on"
-version: "0.1.5"
+version: "0.1.6"
 slug: "texecom_premier"
 init: false
 arch:

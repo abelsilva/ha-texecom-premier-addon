@@ -16,9 +16,12 @@ FROM ${BUILD_FROM}
 
 WORKDIR /app
 
-COPY --from=build-container /app/out .
-COPY ./run.sh /app/run.sh
+# Install requirements for add-on
+RUN apk add --no-cache dotnet8-runtime
 
+COPY ./run.sh /app/run.sh
 RUN chmod a+x /app/run.sh
+
+COPY --from=build-container /app/out .
 
 CMD [ "/app/run.sh" ]
