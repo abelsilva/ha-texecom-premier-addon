@@ -17,7 +17,7 @@ FROM ${BUILD_FROM}
 WORKDIR /app
 
 # Install requirements for add-on
-RUN apk add --no-cache dotnet8-runtime
+RUN apk add --no-cache aspnetcore8-runtime
 
 COPY ./run.sh /app/run.sh
 RUN chmod a+x /app/run.sh
