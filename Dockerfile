@@ -18,4 +18,4 @@ WORKDIR /app
 
 COPY --from=build-container /app/out .
 
-CMD [ "dotnet", "HaTexecomPremierAddon.dll" ]
+CMD [ "/app/HaTexecomPremierAddon" ]
